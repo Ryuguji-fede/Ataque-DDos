@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ataque DDoS</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="estilo.css">
+<html>
+  <head>
+    <style>
+        body {
+            background-color: rgb(6, 6, 6) ;
+        }
+        h1 {
+            background-color:rgba(0, 0, 0, 0.87);
+        }
+        p {
+            background-color: red);
+        }
+        </style>
+    <div id="imagen" class="flexbox">
+        <h1>Ataque DDoS</h1>
+        <p>Federico Trifunovic</p>
+    </div>
+    <div class="cont">
+        <div class="row info">
+            <div class="col-2 aside">
+                <nav>
+                    <ul>
+                    <li><a href="#"><h5 style="color: rgba(189, 56, 210, 0.423);">Home</h5></a></li>
+                    <li><a href="#definicion"><h5 style="color: rgba(189, 56, 210, 0.423);">Definición</h5></a></li>
+                    <li><a href="#funciona"><h5 style="color: rgba(189, 56, 210, 0.423);">¿Como Funciona?</h5></a></l>
+                    <li><a href="#ejemplo"><h5 style="color: rgba(189, 56, 210, 0.423);">Ejemplo</h5></a></li>
+                    <li><a href="#tipos"><h5 style="color:rgba(189, 56, 210, 0.423);">Tipos de Ataque DDoS</h5></a></li>
+                    <li><a href="#detectarlo"><h5 style="color: rgba(189, 56, 210, 0.423);">¿Como Detectarlo?</h5></a></li>
+                    <li><a href="#Fuentes"><h5 style="color: rgba(189, 56, 210, 0.423);">Fuentes</h5></a></li>
+                    <li><a href="#Redes"><h5 style="color: rgba(189, 56, 210, 0.423);">Redes</h5></a></li>
+                 </ul>
+                </nav>    
+            </div>
+            <div class="col-10 section">
+                <div class="item" id="definicion">
+                    <h1 style="color: rgba(189, 56, 210, 0.423);">Definición</h1>
+                    <p style="color: white;">Los ataques de red distribuidos a menudo se conocen como ataques de denegación distribuida de servicio (DDoS). Este tipo de ataque aprovecha los límites de capacidad específicos que se aplican a cualquier recurso de red, tal como la infraestructura que habilita el sitio web de la empresa. El ataque DDoS envía varias solicitudes al recurso web atacado, con la intención de desbordar la capacidad del sitio web para administrar varias solicitudes y de evitar que este funcione correctamente.</p>
+                </div>
+                <div class="item">
+                    <div class="item" id="funciona">
+                        <h1 style="color: rgba(189, 56, 210, 0.423);">Como funcionan los Ataques DDoS</h1>
+                        <p style="color: white;">Los recursos de red (tales como los servidores web) tienen un límite finito de solicitudes que pueden atender al mismo tiempo. Además del límite de capacidad del servidor, el canal que conecta el servidor a Internet tiene un ancho de banda o capacidad limitados. Cuando la cantidad de solicitudes sobrepasa los límites de capacidad de cualquiera de los componentes de la infraestructura, el nivel de servicio probablemente se vea afectado de alguna de las siguientes maneras:</p>
+                        <p style="color: white;">La respuesta a las solicitudes será mucho más lenta de lo normal.</p>
+                        <p style="color: white;">Es posible que se ignoren algunas (o todas) las solicitudes de los usuarios.</p>
+                        <p style="color: white;">Por regla general, la intención primordial del atacante es evitar por completo el funcionamiento normal del recurso web, una "denegación" total del servicio. El atacante también puede solicitar un pago para detener el ataque. En algunos casos, el objetivo del ataque DDoS puede ser desacreditar o dañar el negocio de un competidor.</p>
+                    </div>
+                    <div class="item" id="ejemplo">
+                        <h1 style="color: rgba(189, 56, 210, 0.423);">Ejemplo</h1>
+                        <p style="color: white;">Algunos de los ejemplos más comunes de ataques DDoS son los ataques de amplificación de DNS, inundación SYN e inundación UDP. Además, a veces se utilizan múltiples ataques juntos para atacar varias capas al mismo tiempo. Por ejemplo, combinando un ataque de amplificación de DNS con un ataque de inundación HTTP.</p>
+                    </div>
+                    <div class="item" id="tipos">
+                        <h1 style="color: rgba(189, 56, 210, 0.423);">Tipos de ataques DDoS</h1>
+                        <p style="color: white;">Los ataques DDoS pueden ser de diferentes tipos. Si bien todos se basan en el mismo fundamento, hay algunas cosas diferentes que hacen que el ataque sea de otro tipo de DDoS. Algunos de ellos son:</p>
+                        <br>
+                        <h2 style="color: rgba(189, 56, 210, 0.423);">UDP Flood</h2>
+                        <p style="color: white;">Este ataque se aprovecha del protocolo UDP. Se basa en inundarlos puertos de forma aleatoria con numerosos paquetes UDP, causando que el equipo que sea la víctima, compruebe cada petición a cada puerto. Como el número de paquetes enviados es muy alto, los recursos del servidor o equipo se agotan, y en una última instancia puede llegar a ocasionar una inaccesibilidad al sistema.</p>
+                        <h2 style="color: rgba(189, 56, 210, 0.423);">ICMP Flood</h2>
+                        <p style="color: white;">Es muy similar al ataque de inundación UDP, pero en este caso realiza la saturación con el recurso de destino con solicitudes de paquetes eco ICMP. Por lo cual realiza envíos de los paquetes sin esperar a la respuesta de los mismos. Lo que ocasiona es un consumo muy alto del ancho de banda entrante y saliente, porque las solicitudes tratarán de ser respondidas con paquetes ICMP a la vez que no paran de llegar nuevos paquetes.</p>
+                        <h2 style="color: rgba(189, 56, 210, 0.423);">Service Port Flood</h2>
+                        <p style="color: white;">En este caso los paquetes van dirigidos a puertos estándar en los que se sabe que habrá un mayor tráfico entrante, y saliente. Es uno de los más complejos para evitar y detener, por lo cual es importante establecer sistemas de seguridad específicos para este tipo de ataque.</p>
+                        <h2 style="color: rgba(189, 56, 210, 0.423);">HTTP Flood</h2>
+                        <p style="color: white;">Hace uso de las peticiones GET y POST, y hace que parezcan válidas al atacar servidores o aplicaciones web. No utiliza paquetes de gran tamaño, por lo cual utiliza menos ancho de banda para inhabilitar al objetivo. Uno de los usos más comunes, es que atrapa a los equipos para utilizarlos luego en otros ataques a otros destinos. Incluso puede hacer que se encuentre inactiva hasta que sea necesario utilizarla.</p>
+                    </div>
+                    <br>
+                    <div class="item" id="detectarlo">
+                        <h1 style="color: rgba(189, 56, 210, 0.423);">¿Como detectarlo?</h1>
+                        <p style="color: white;">La seguridad cibernética se ha visto constantemente amenazada a nivel mundial, con los ataques DDoS siendo gran parte de la fuente de preocupaciones para las empresas que tienen fuerte presencia en línea. Muchas compañías que basan sus operaciones en el ámbito informático, desde pequeñas operaciones hasta grandes conglomerados comerciales son objetivos potenciales de este tipo de ataques cibernéticos, que tienen el poder de detener sus operaciones comerciales por completo.</p>
+                    </div>
+                    <div class="item" id="Fuentes">
+                    <h1 style="color: rgba(189, 56, 210, 0.423);">Fuentes</h1>
+                    <p style="color: white;">Easydmarc</p>
+                    <p style="color: white;">kinsta</p>
+                    <p style="color: white;">redeszone</p>
+                    <p style="color: white;">kaspersky</p>
+                    </div>
+                    
+                    <div class="item" id="Redes">
+                        <h1 style="color: rgba(189, 56, 210, 0.423);">Redes</h1>
+                        <h2 style="color: rgba(189, 56, 210, 0.423);">Instagram</h2>
+                        <p style="color: white;">@Ryuguji.Fede</p>
+                        <h2 style="color: rgba(189, 56, 210, 0.423);">Mail</h2>
+                        <p style="color: white;">Fedetrifu2006@gmail.com</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+<script src="Carrousel.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
